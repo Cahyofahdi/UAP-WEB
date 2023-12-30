@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Perhitungan</title>
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        
+        <table>
+
+            <tr>
+                <th>Kode</th>
+                <th>Barang</th>
+                <th>Harga</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>Barang A</td>
+                <td>10.000</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Barang B</td>
+                <td>20.000</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Barang C</td>
+                <td>30.000</td>
+            </tr>
+        </table>
+
+        <div>
+            <form action="">
+                <label for="kode">Masukkan Kode       :</label>
+                <input type="text" id = "kode"><br>
+                <label for="jumlahBarang">Banyaknya Barang  :</label>
+                <input type="text" id = "jumlahBarang"><br>
+                <input type="submit">
+            </form>
+        </div>
+
+        <script>
+            function total(){
+                let kode 
+                let kodeBarang
+                let jumlahBarang
+                let totalBarang
+
+                if (kode === "001"){
+                    kodeBarang = 10000
+                    jumlahBarang = document.getElementById("jumlahBarang").value 
+                    totalBarang = jumlahBarang * kodeBarang
+                } else if (kode === "002"){
+                    kodeBarang = 20000
+                    jumlahBarang = document.getElementById("jumlahBarang").value 
+                    totalBarang = jumlahBarang * kodeBarang
+                } else if (kode === "003"){
+                    kodeBarang = 30000
+                    jumlahBarang = document.getElementById("jumlahBarang").value 
+                    totalBarang = jumlahBarang * kodeBarang
+            }
+            window.alert("Total Jumlah Semua Barang"+ totalBarang)
+        }
+        </script>
+    </body>
+</html>
